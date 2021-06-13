@@ -1,0 +1,121 @@
+{% extends 'base2.html' %}
+{% load static  %}
+{% block content %}
+<div class="container">
+  <div class="form-row">
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <div class="tab-bmi">
+        <h3>BMI Calculator</h3>
+        <div class="tab">
+          <button class="tablinks" onclick="openUnit(event, 'metric')">Metric</button>
+          <button class="tablinks" onclick="openUnit(event, 'imperial')">Imperial</button>
+
+        </div>
+        <div class="tabcontent" id="metric">
+          <form method="post">
+            {% csrf_token %}
+            <div class="col-12">
+              <label for="">Weight:</label>
+              <input type="text" name="weight-metric" class="form-control" required placeholder="kg">
+            </div>
+
+            <div class="col-12">
+              <label for="">Height:</label>
+              <input type="text" name="height-metric" class="form-control" required placeholder="m">
+            </div>
+            {% if request.user.is_authenticated %}
+            <div class="form-check">
+
+              <input checked="checked" name="save" class="form-check-input" value="on" type="checkbox">
+              <label for="" class="form-check-label">Save It.</label>
+            </div>
+            {% else %}
+            <div class="form-check">
+
+              <input  disabled checked="checked" name="save" class="form-check-input" value="on" type="checkbox">
+              <label for="" class="form-check-label">Save It.</label>
+            </div>
+            {% endif %}
+
+            <button type="submit" class="btn btn-primary" action="{% url 'home' %}">Calculate</button>
+
+          </form>
+
+        </div>
+
+
+
+        <div class="tabcontent" id="imperial">
+          <form method="post">
+            {% csrf_token %}
+            <div class="col-12">
+              <label for="">Weight:</label>
+              <input type="text" name="weight-imperial" class="form-control" required placeholder="lbs">
+            </div>
+
+            <div class="col-12">
+              <label for="">Height:</label>
+
+              <div class="input-group">
+              <input type="text" name="feet" class="form-control"  placeholder="feet">
+              <input type="text" name="inches" class="form-control"  placeholder="inches">
+
+              </div>
+            </div>
+
+            {% if request.user.is_authenticated %}
+            <div class="form-check">
+
+              <input checked="checked" name="save" class="form-check-input" value="on" type="checkbox">
+              <label for="" class="form-check-label">Save It.</label>
+            </div>
+            {% else %}
+            <div class="form-check">
+
+              <input  disabled checked="checked" name="save" class="form-check-input" value="on" type="checkbox">
+              <label for="" class="form-check-label">Save It.</label>
+            </div>
+
+            {& endif &}
+            <button type="submit" class="btn btn-primary" action="{% url 'home' %}">Calculate</button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    {% if bmi %}
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <h2>Result</h2>
+       <p>your bmi = {{bmi}}   | {{state}}</p>
+       <div class="progress">
+         <div class="progress-bar bg-danger" style="width:30%">
+           underweight
+         </div>
+         <div class="progress-bar bg-success" style="width:30%">
+           normal
+         </div>
+         <div class="progress-bar bg-warning" style="width:30%">
+           overweight
+         </div>
+         <div class="progress-bar bg-danger" style="width:30%">
+           obesity
+         </div>
+
+
+
+
+       </div>
+      </div>
+      {% endif %}
+    </div>
+{{ div|safe }}
+</div>
+
+
+{% endif  %}
+{% endblock content %}

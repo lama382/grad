@@ -1,0 +1,392 @@
+header{
+	text-align: center;
+	color: #ffffff;
+	background-color: #00ff33;
+	background-image: url('/static/images/nut.jpg') ;
+	/*background-repeat: no-repeat;*/
+	background-size: 100% ;
+	background-position: center;
+    background-size: cover;
+
+
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+
+	/*height:150px;
+	width: 100%;
+	padding: 1%; */
+}
+
+
+nav a{
+
+	text-decoration:none;
+	display: inline-block;
+	margin: 3%;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 1%;
+	width: 10%;
+	text-align: center;
+	color: #000000;
+	background-color:rgba(255, 255, 255,0.5);
+	border-radius: 5px;
+
+}
+nav a:hover{
+
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	background-color: #ffffff;
+}
+
+
+.sim{   /*for h2 */
+	float: right;
+	font-size: 18px;
+   line-height: 1.44;
+   border-bottom: solid 1px #dcdbdb;
+	/*text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;  */
+
+}
+
+
+
+.di{     /* for ul */
+text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+font-size: 18px;
+line-height: 1.44;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+margin-left: -4px;
+margin-right: -4px;
+margin-top: 20;
+margin-bottom: 0;
+display: flex;
+list-style: none;
+padding: 0;
+justify-content: space-between;
+flex-wrap: nowrap;
+}
+
+
+.nin{   /* for covid li*/
+
+	text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+list-style: none;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+line-height: 26px;
+font-size: 18px;
+margin-top: 0;
+margin-bottom: 0;
+flex: 1 1 50%;
+margin-left: 8px;
+margin-right: 8px;
+max-width: calc(50% - 16px);
+}
+/*.lo{    for div that have ul
+	text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+font-size: 18px;
+line-height: 1.44;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+width: 100%;
+}     */
+
+.null{     /* for covid 19 img*/
+	width: 250px;
+height: 250px;
+
+/*text-size-adjust: 100%;
+font-family: "Proxima Nova",system-ui,sans-serif;
+list-style: none;
+font-size: 18px;
+cursor: pointer;
+color: #01adb9;
+line-height: 0;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+user-select: none;
+max-width: 100%;  */
+}
+
+.null:hover{
+	opacity: .8;
+}
+.df{
+	text-size-adjust: 100%;
+list-style: none;
+cursor: pointer;
+color: inherit;
+user-select: none;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+font-family: "Proxima Nova Condensed",system-ui,sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/*margin: 10px 0 0;  */
+text-decoration: none;
+display: inline-block;
+color: #231f20;
+float: right;
+margin-top: 10px;
+margin-right: 60px;
+}
+
+.df:hover{
+ color: purple;
+}
+
+.s{   /*for ul*/
+	text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+font-size: 18px;
+line-height: 1.44;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+padding: 0;
+margin: 0;
+list-style: none;
+grid-template-columns: repeat(2,calc(50% - 30px));
+grid-column-gap: 60px;
+}
+.db{     /*for first list*/
+	text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+list-style: none;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+line-height: 26px;
+font-size: 18px;
+flex: 1;
+max-width: 100%;
+margin-bottom: 30px;
+grid-column: 2;
+margin-top: 100px;
+}
+
+/*.sx{
+	float: right;
+	text-size-adjust: 100%;
+cursor: default;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+position: relative;
+clear: both;
+color: inherit;
+margin-bottom: 0;
+margin-top: 0;
+text-transform: uppercase;
+font-family: "Proxima Nova Condensed",system-ui,sans-serif;
+font-weight: 700;
+line-height: 26px;
+font-size: 24px;
+}     */
+.xs{
+	float: right;
+	border-bottom: solid 1px #dcdbdb;
+	font-size: 18px;
+   line-height: 1.44;
+
+	/*	text-size-adjust: 100%;
+cursor: default;
+font-family: "Proxima Nova",system-ui,sans-serif;
+color: #231f20;
+
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+border-bottom: solid 1px #dcdbdb;
+display: flex;
+justify-content: space-between;
+padding-bottom: 20px;
+flex-direction: row;
+margin-top: 25px;
+*/
+}
+.p{    /*for img beetroot*/
+	width: 300px;
+height: 300px;
+float: right;
+margin-top: 60px;
+
+
+}
+.ff{     /*for p that say the beetroot is important*/
+	text-size-adjust: 100%;
+list-style: none;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+background-color: transparent;
+border-color: currentColor;
+/*font-family: "Proxima Nova Condensed",system-ui,sans-serif; */
+font-weight: 700;
+text-decoration: none;
+display: block;
+color: #231f20;
+margin: 0;
+font-size: 26px;
+line-height: 30px;
+float: right;
+margin-top: 60px;
+margin-right: 20px;
+}
+.vv{   /*for a long water text*/
+	font-weight: 400;
+	font-size: 18px;
+line-height: 22px;
+margin-top: 0px;
+margin-right: 50px;
+text-align: right;
+}
+.mi{
+	background-color: #ffffff;
+    }
+    .footer{
+    	font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+line-height: 1.7;
+box-sizing: border-box;
+display: block;
+font-size: 14px;
+margin-top: 200px;
+color: rgb(255,255,255);
+background: #1ebba3;
+background:linear-gradient(to right bottom,#1ebba3,#648880);
+text-align: center;
+    }
+
+.j{     /*for background*/
+font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+line-height: 1.7;
+font-size: 14px;
+color: rgba(255,255,255,0.7);
+box-sizing: border-box;
+background: #0d2235;
+background:linear-gradient(to right bottom,#648880,#293f50);
+min-height: 220px;
+padding: 50px 0 30px;
+}
+
+.link-box{
+
+
+font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+line-height: 1.7;
+font-size: 14px;
+color: rgba(255,255,255,0.7);
+box-sizing: border-box;
+text-align: center;
+
+}
+
+.t{  /*for h4*/
+	padding: 0;
+border: 0;
+font: inherit;
+vertical-align: baseline;
+margin: 20px 0 10px;
+line-height: 1.5;
+color: #fff;
+margin-top: 5px;
+display: inline-block;
+position: relative;
+text-transform: uppercase;
+font-style: italic;
+margin-bottom: 15px;
+font-size: 16px;
+font-weight: 700;
+font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+
+.kl{
+	font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+color: rgba(255,255,255,0.7);
+box-sizing: border-box;
+font-size: 13px;
+background: #0b1d2d;
+background:linear-gradient(to right bottom,#648880,#295588);
+padding: 12px 0;
+height: 58px;
+line-height: 26px;
+}
+.notice{
+	float: right;
+}
+
+
+.social-media{
+	font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+color: rgb(255,255,255);
+font-size: 13px;
+line-height: 26px;
+box-sizing: border-box;
+text-align: center;
+
+}
+.social-media a{
+/*font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+line-height: 26px;
+box-sizing: border-box;
+outline: none;
+text-decoration: none;
+width: 34px;
+height: 34px;
+color: #000;
+opacity: .4;
+font-size: 12px;
+display: inline-block;
+margin-left: 15px;
+border-radius: 40px;
+text-align: center;
+border: 2px solid;
+margin-bottom: 200px;
+*/
+
+font: inherit;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+font-size: 14px;
+box-sizing: border-box;
+outline: none;
+color: rgb(255,255,255);
+text-decoration: none;
+margin: 0 4%;
+width:50%;
+
+line-height: 26px;
+margin-top: 4px;
+margin-bottom: 4px;
+margin-right: 20px;
+margin-left: 10px;
+}
+.social-media a:hover{
+	color:rgba(255,255,255,0.7);
+}
